@@ -2,7 +2,7 @@ import * as actions from './actionTypes';
 
 let countId = 0;
 
-function reducer(state = [], action) {
+export default function reducer(state = [], action) {
   switch (action.type) {
     case actions.PRODUCT_ADDED:
       return [
@@ -26,5 +26,3 @@ function reducer(state = [], action) {
       return state;
   }
 }
-
-export default reducer;
